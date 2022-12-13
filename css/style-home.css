@@ -1,6 +1,17 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+}
+
 header {
 	background: #BBBBBB;
-	padding: 20px 0;
+	padding: 10px 0;
+}
+
+/*-------------------------------------------header*/
+
+main {
+	background: linear-gradient(#FFFFFF, #888888);
 }
 
 .caixa {
@@ -9,9 +20,13 @@ header {
 	margin: 0 auto;
 }
 
+.logo {
+	width: 10%;
+}
+
 nav {
 	position: absolute;
-	top: 110px;
+	top: 60px;
 	right: 0;
 }
 
@@ -24,8 +39,9 @@ nav a {
 	text-transform: uppercase;
 	color: #000000;
 	font-weight: bolder;
-	font-size: 22px;
+	font-size: 18px;
 	text-decoration: none;
+	text-shadow: 1px 1px #696969;
 }
 
 nav a:hover {
@@ -33,48 +49,91 @@ nav a:hover {
 	text-decoration: underline;
 }
 
+/*-------------------------------------------main*/
+
+.banner {
+	width: 100%;
+	opacity: 0.2;
+}
+
+.banner:hover {
+	opacity: 1;
+	transition: 400ms;
+}
+
+.principal{
+	padding: 10px;
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 2em;
+	padding: 10px;
+	clear: left;	
+	color: rgba(0, 0, 0,0.8);
+	text-shadow: 1px 1px #696969;
+}
+
+.utensilios {
+	width: 130px;
+	float: left;
+	border-radius: 5px;
+	margin: 0 20px 0 20px;
+	box-shadow: 0px 0px 20px 5px #696969;
+}
+
+.principal p {
+	margin: 0 0 0.5em;
+}
+
 p {
 	padding: 5px 10px;
 }
 
-.banner {
-	width: 100%;
-}
-
-
-.principal{
-	background: #CCCCCC;
-	padding: 10px;
-}
-
-.titulo-principal {
-	padding-left: 20px;
-}
-
-.titulo-centralizado1 {
-	text-align: center;
-	font-weight: bolder;
-	font-size: 30px;
-	padding: 10px;	
-}
-
-.titulo-centralizado {
-	text-align: center;
-	font-weight: bolder;
-	font-size: 45px;
-	padding: 20px;	
-}
-
-main p {
-	text-align: center;
-}
-
-#missao {
+.missao {
 	font-size: 20px
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
 }
 
 main em strong {
 	color: #FF0000;
+}
+
+.mapa {
+	padding: 10px 0;
+	text-align: center;
+}
+
+.quadrado-mapa {
+	box-shadow: 0px 0px 20px 5px #696969;
+}
+
+.mapa p {
+	margin: 0 0 20px;
+	text-align: center;
+}
+
+.beneficios {
+	padding: 20px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.video {
+	float: right;
+	margin: 20px;
+	box-shadow: 0px 0px 20px 5px #696969;
 }
 
 .itens {
@@ -89,47 +148,11 @@ main em strong {
 	font-size: 22px;
 }
 
-.beneficios {
-	background: #FFFFFF;
-	padding: 20px;
-}
 
 main ul {
-	display: inline-block;
 	vertical-align: top;
-	width: 30%;
+	width: 40%;
 	margin-right: 15%;
-}
-
-.imagembeneficios {
-	width: 38%;
-	border-radius: 18px;
-	float: right;
-	margin-right: 182px;
-
-}
-
-.imagembeneficios:hover {
-	transform: scale(1.1);
-	transition: 1s all;
-}
-
-
-footer {
-	text-align: center;
-	background: #1C1C1C;
-	padding: 40px 0;
-}
-
-.copyright {
-	color: #FFFFFF;
-	font-size: 13px;
-	margin: 20px 0 0;
-}
-
-table {
-	margin: 20px 0 40px;
-	margin-left: 30px;
 }
 
 thead {
@@ -138,7 +161,95 @@ thead {
 	font-weight: bold;
 }
 
+table {
+	margin: 20px 0 40px;
+	margin-left: 30px;
+}
+
 td, th {
 	border: 1px solid #000000;
 	padding: 8px 15px ;
+}
+
+/*-------------------------------------------footer*/
+
+footer {
+	text-align: center;
+	background: #1C1C1C;
+	padding: 5px 0;
+}
+
+footer img {
+	width: 8%;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 5px 0 0 0;
+}
+
+
+/*-------------------------------------------mobile*/
+
+
+@media only screen and (max-width: 480px) {
+	.caixa, .principal, .mapa, footer, .quadrado-mapa, .video {
+		width: auto;
+	}
+
+	nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bolder;
+	font-size: 15px;
+	text-decoration: none;
+	text-shadow: 1px 1px #696969;
+	}
+
+	.caixa {
+	padding: 10px;
+	}
+
+	nav {
+	top: 30px;
+	padding-right: 15px;
+	}
+
+	.titulo-principal {
+	font-size: 1.5em;
+	}
+
+	.principal p {
+	font-size: 1em;
+	text-align: justify;
+	}
+
+	.beneficios {
+	width: auto;
+	display: flex;
+	flex-direction: column;
+	}
+
+	.itens {
+	width: 300px;
+	text-align: center;
+	order: 1;
+	}
+
+	.video {
+	order: 2;
+	width: auto;
+	text-align: center;
+	}
+
+	.tabela {
+	text-align: center;
+	width: 250px;
+	order: 3;
+	margin-left: auto;
+    margin-right: auto; 
+	}
+
+
 }

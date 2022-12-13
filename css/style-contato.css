@@ -1,0 +1,187 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	background: #BBBBBB;
+	padding: 10px 0;
+}
+
+/*-------------------------------------------header*/
+
+main {
+	background: linear-gradient(#FFFFFF, #888888);
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 10%;
+}
+
+nav {
+	position: absolute;
+	top: 60px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bolder;
+	font-size: 18px;
+	text-decoration: none;
+	text-shadow: 1px 1px #696969;
+}
+
+nav a:hover {
+	color: #c78c19;
+	text-decoration: underline;
+}
+
+/*-------------------------------------------main*/
+
+main {
+	width: 100%;
+	margin: 0 auto;
+}
+
+form {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: darkorange;
+	transform: scale(1.2);
+}
+
+
+/*-------------------------------------------footer*/
+
+footer {
+	text-align: center;
+	background: #1C1C1C;
+	padding: 5px 0;
+}
+
+footer img {
+	width: 8%;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 5px 0 0 0;
+}
+
+/*-------------------------------------------mobile*/
+
+
+@media only screen and (max-width: 480px) {
+footer, header {
+	width: auto;
+}
+
+form {
+	width: auto;
+	padding: 15px;
+}
+
+fieldset label {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bolder;
+	font-size: 15px;
+	text-decoration: none;
+	text-shadow: 1px 1px #696969;
+}
+
+.caixa {
+	padding: 10px;
+	width: auto;
+}
+
+nav {
+	top: 30px;
+	padding-right: 15px;
+}
+
+.titulo-principal {
+	font-size: 1.5em;
+}
+
+.enviar {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	font-size: 15px;
+}
+
+.checkbox, select, label input,fieldset label, fieldset legend {
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 7px;
+    margin-top: 7px;
+}
+
+.input-padrao {
+	width: 250px;
+	margin: 10px auto;
+}
+
+form label {
+	padding-left: 20px;
+}
+
+
+}

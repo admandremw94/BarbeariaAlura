@@ -1,0 +1,202 @@
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+}
+
+header {
+	background: #BBBBBB;
+	padding: 10px 0;
+}
+
+/*-------------------------------------------header*/
+
+main {
+	background: linear-gradient(#FFFFFF, #888888);
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 10%;
+}
+
+nav {
+	position: absolute;
+	top: 60px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bolder;
+	font-size: 18px;
+	text-decoration: none;
+	text-shadow: 1px 1px #696969;
+}
+
+nav a:hover {
+	color: #c78c19;
+	text-decoration: underline;
+}
+
+/*-------------------------------------------main*/
+
+.produtos {
+	width: 940px;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 29%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+	background: #FFFFFF;
+	box-shadow: 0px 0px 10px 5px #696969;
+}
+
+.produtos li:hover {
+	border-color: #C78C19;
+}
+
+.produtos li:active {
+	border-color: #088C19;
+}
+
+.produtos li:hover h2 {
+	font-size: 32px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produtos img {
+	width: 240px;
+
+}
+
+.produto-descricao {
+	font-size: 18px;
+	margin-top: 10px;
+}
+
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin: 10px 0 0;
+}
+
+/*-------------------------------------------footer*/
+
+footer {
+	text-align: center;
+	background: #1C1C1C;
+	padding: 5px 0;
+}
+
+footer img {
+	width: 8%;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 5px 0 0 0;
+}
+
+/*-------------------------------------------mobile*/
+
+@media only screen and (max-width: 480px) {
+.produtos {
+	width: 100%;
+	height: auto;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+}
+
+main {
+	display: block;
+	height: 100%;
+}
+
+ul {
+	height: 100%;
+}
+
+footer {
+	height: 90px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bolder;
+	font-size: 15px;
+	text-decoration: none;
+	text-shadow: 1px 1px #696969;
+}
+
+.caixa {
+	padding: 7px;
+	width: auto;
+}
+
+nav {
+	top: 30px;
+	padding-right: 15px;
+}
+
+.produtos li {
+	height: 250px;
+}
+
+.produtos h2 {
+	font-size: 15px;
+}
+
+.produtos li:hover h2 {
+	font-size: 17px;
+}
+
+.produtos p {
+	font-size: 12px;
+}
+
+.produtos img {
+	width: 70px;
+}
+
+.copyright {
+	font-size: 10px;
+}
+
+.produto-preco {
+	padding-top: 15px;
+	display: flex;
+
+}
+}
